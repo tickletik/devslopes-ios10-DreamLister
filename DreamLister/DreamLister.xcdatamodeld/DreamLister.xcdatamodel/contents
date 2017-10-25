@@ -2,6 +2,8 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13241" systemVersion="16G29" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Image" representedClassName="Image" syncable="YES" codeGenerationType="class">
         <attribute name="image" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <relationship name="toItem" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Item" syncable="YES"/>
+        <relationship name="toStore" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Store" syncable="YES"/>
     </entity>
     <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
         <attribute name="created" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
@@ -14,14 +16,17 @@
     </entity>
     <entity name="ItemType" representedClassName="ItemType" syncable="YES" codeGenerationType="class">
         <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="toItem" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Item" syncable="YES"/>
     </entity>
     <entity name="Store" representedClassName="Store" syncable="YES" codeGenerationType="class">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="toImage" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Image" syncable="YES"/>
+        <relationship name="toItem" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Item" syncable="YES"/>
     </entity>
     <elements>
+        <element name="Image" positionX="-54" positionY="18" width="128" height="90"/>
         <element name="Item" positionX="-63" positionY="-18" width="128" height="135"/>
-        <element name="Image" positionX="-54" positionY="18" width="128" height="60"/>
-        <element name="Store" positionX="-36" positionY="27" width="128" height="60"/>
-        <element name="ItemType" positionX="-18" positionY="36" width="128" height="60"/>
+        <element name="ItemType" positionX="-18" positionY="36" width="128" height="75"/>
+        <element name="Store" positionX="-36" positionY="27" width="128" height="90"/>
     </elements>
 </model>
