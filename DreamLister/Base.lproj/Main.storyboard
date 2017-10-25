@@ -51,11 +51,23 @@
                                                                 <constraint firstAttribute="width" constant="100" id="QB1-vl-CHY"/>
                                                             </constraints>
                                                         </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Telsa Model S" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLQ-1a-8w4">
+                                                            <rect key="frame" x="116" y="8" width="235" height="21"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="21" id="DMg-Dd-dqc"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstItem="xBU-sP-vIe" firstAttribute="leading" secondItem="1um-c8-sHW" secondAttribute="leading" constant="8" id="amW-Sp-blT"/>
+                                                        <constraint firstItem="yLQ-1a-8w4" firstAttribute="top" secondItem="1um-c8-sHW" secondAttribute="top" constant="8" id="bin-CC-8Lr"/>
+                                                        <constraint firstItem="yLQ-1a-8w4" firstAttribute="leading" secondItem="xBU-sP-vIe" secondAttribute="trailing" constant="8" id="hHf-S9-05E"/>
                                                         <constraint firstItem="xBU-sP-vIe" firstAttribute="centerY" secondItem="1um-c8-sHW" secondAttribute="centerY" id="hgp-z8-VZv"/>
+                                                        <constraint firstAttribute="trailing" secondItem="yLQ-1a-8w4" secondAttribute="trailing" constant="8" id="yEc-DI-LXw"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
