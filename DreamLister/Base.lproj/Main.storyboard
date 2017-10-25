@@ -29,16 +29,19 @@
                                 </segments>
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </segmentedControl>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BYt-3L-gOR">
-                                <rect key="frame" x="16" y="134" width="343" height="533"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BYt-3L-gOR">
+                                <rect key="frame" x="0.0" y="132" width="375" height="535"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="LdL-qQ-VwN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2el-TO-EQI"/>
+                            <constraint firstItem="BYt-3L-gOR" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="E6Q-VB-Luo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LdL-qQ-VwN" secondAttribute="trailing" constant="20" id="EcX-8k-XVe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BYt-3L-gOR" secondAttribute="trailing" id="FhZ-31-voC"/>
+                            <constraint firstItem="BYt-3L-gOR" firstAttribute="top" secondItem="LdL-qQ-VwN" secondAttribute="bottom" constant="20" id="NLl-mx-5r5"/>
+                            <constraint firstItem="BYt-3L-gOR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Qrn-mx-mUQ"/>
                             <constraint firstItem="LdL-qQ-VwN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="rcS-Ke-sJF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
