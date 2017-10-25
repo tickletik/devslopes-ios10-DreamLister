@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -39,7 +40,19 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OoO-iz-mgf" id="NnS-9p-NVM">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="149.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1um-c8-sHW">
+                                                    <rect key="frame" x="8" y="8" width="359" height="134"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
                                             <color key="backgroundColor" red="0.49341001981777344" green="0.60179653436654501" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="1um-c8-sHW" firstAttribute="trailing" secondItem="NnS-9p-NVM" secondAttribute="trailingMargin" id="8Jj-7j-aY9"/>
+                                                <constraint firstItem="1um-c8-sHW" firstAttribute="leading" secondItem="NnS-9p-NVM" secondAttribute="leadingMargin" id="9pS-sG-9UA"/>
+                                                <constraint firstItem="1um-c8-sHW" firstAttribute="top" secondItem="NnS-9p-NVM" secondAttribute="topMargin" id="ENo-WA-tc0"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="1um-c8-sHW" secondAttribute="bottom" id="Z2L-aA-egl"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
