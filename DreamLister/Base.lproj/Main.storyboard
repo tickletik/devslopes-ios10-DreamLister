@@ -43,7 +43,20 @@
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1um-c8-sHW">
                                                     <rect key="frame" x="8" y="8" width="359" height="134"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xBU-sP-vIe">
+                                                            <rect key="frame" x="8" y="17" width="100" height="100"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="100" id="NIf-uJ-bPb"/>
+                                                                <constraint firstAttribute="width" constant="100" id="QB1-vl-CHY"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="xBU-sP-vIe" firstAttribute="leading" secondItem="1um-c8-sHW" secondAttribute="leading" constant="8" id="amW-Sp-blT"/>
+                                                        <constraint firstItem="xBU-sP-vIe" firstAttribute="centerY" secondItem="1um-c8-sHW" secondAttribute="centerY" id="hgp-z8-VZv"/>
+                                                    </constraints>
                                                 </view>
                                             </subviews>
                                             <color key="backgroundColor" red="0.49341001981777344" green="0.60179653436654501" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
