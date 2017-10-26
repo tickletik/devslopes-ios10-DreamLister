@@ -72,6 +72,8 @@
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
+                                                        <constraint firstItem="0D4-UD-N4u" firstAttribute="leading" secondItem="xBU-sP-vIe" secondAttribute="trailing" constant="8" id="BCw-NF-TnD"/>
+                                                        <constraint firstAttribute="trailing" secondItem="0D4-UD-N4u" secondAttribute="trailing" constant="8" id="adQ-6X-r42"/>
                                                         <constraint firstItem="xBU-sP-vIe" firstAttribute="leading" secondItem="1um-c8-sHW" secondAttribute="leading" constant="8" id="amW-Sp-blT"/>
                                                         <constraint firstItem="yLQ-1a-8w4" firstAttribute="top" secondItem="1um-c8-sHW" secondAttribute="top" constant="8" id="bin-CC-8Lr"/>
                                                         <constraint firstItem="yLQ-1a-8w4" firstAttribute="leading" secondItem="xBU-sP-vIe" secondAttribute="trailing" constant="8" id="hHf-S9-05E"/>
