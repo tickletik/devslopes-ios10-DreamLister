@@ -8,7 +8,17 @@
 
 import UIKit
 
-class MaterialView: UIView {
+private var materialKey = false
 
+extension UIView {
 
+    @IBInspectable var materialDesign: Bool {
+        get {
+            return materialKey
+        }
+        
+        set {
+            materialKey = newValue
+        }
+    }
 }
