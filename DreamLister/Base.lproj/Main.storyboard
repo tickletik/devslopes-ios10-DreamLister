@@ -69,11 +69,8 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="$ 80,000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qt2-XP-bhZ">
-                                                            <rect key="frame" x="116" y="66" width="235" height="51"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="21" id="pEK-t1-Yo7"/>
-                                                            </constraints>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 80,000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qt2-XP-bhZ">
+                                                            <rect key="frame" x="116" y="66" width="235" height="60"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -81,13 +78,17 @@
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
+                                                        <constraint firstItem="Qt2-XP-bhZ" firstAttribute="top" secondItem="0D4-UD-N4u" secondAttribute="bottom" constant="8" id="1Z3-hC-orY"/>
                                                         <constraint firstItem="0D4-UD-N4u" firstAttribute="leading" secondItem="xBU-sP-vIe" secondAttribute="trailing" constant="8" id="BCw-NF-TnD"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Qt2-XP-bhZ" secondAttribute="trailing" constant="8" id="Gjk-Ak-Gj4"/>
                                                         <constraint firstItem="0D4-UD-N4u" firstAttribute="top" secondItem="yLQ-1a-8w4" secondAttribute="bottom" constant="8" id="JQA-HM-ywm"/>
                                                         <constraint firstAttribute="trailing" secondItem="0D4-UD-N4u" secondAttribute="trailing" constant="8" id="adQ-6X-r42"/>
                                                         <constraint firstItem="xBU-sP-vIe" firstAttribute="leading" secondItem="1um-c8-sHW" secondAttribute="leading" constant="8" id="amW-Sp-blT"/>
                                                         <constraint firstItem="yLQ-1a-8w4" firstAttribute="top" secondItem="1um-c8-sHW" secondAttribute="top" constant="8" id="bin-CC-8Lr"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Qt2-XP-bhZ" secondAttribute="bottom" constant="8" id="ftD-16-Oss"/>
                                                         <constraint firstItem="yLQ-1a-8w4" firstAttribute="leading" secondItem="xBU-sP-vIe" secondAttribute="trailing" constant="8" id="hHf-S9-05E"/>
                                                         <constraint firstItem="xBU-sP-vIe" firstAttribute="centerY" secondItem="1um-c8-sHW" secondAttribute="centerY" id="hgp-z8-VZv"/>
+                                                        <constraint firstItem="Qt2-XP-bhZ" firstAttribute="leading" secondItem="xBU-sP-vIe" secondAttribute="trailing" constant="8" id="lsz-es-2ru"/>
                                                         <constraint firstAttribute="trailing" secondItem="yLQ-1a-8w4" secondAttribute="trailing" constant="8" id="yEc-DI-LXw"/>
                                                     </constraints>
                                                 </view>
