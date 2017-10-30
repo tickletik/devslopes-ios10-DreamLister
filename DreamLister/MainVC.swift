@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFetchedResultsController {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var segment: UISegmentedControl!
