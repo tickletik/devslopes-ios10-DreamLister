@@ -27,6 +27,10 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         return UITableViewCell()
     }
     
+    func configureCell(cell: ItemCell, indexPath: NSIndexPath) {
+        // update cell
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let sections = controller.sections {
             let sectionInfo = sections[section]
