@@ -22,6 +22,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         tableView.delegate = self
         tableView.dataSource = self
         
+        generateTestData()
         attemptFetch()
     }
 
@@ -120,5 +121,30 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
             
         }
     }
+    
+    
+    func generateTestData() {
+        let item = Item(context: context)
+        item.title = "MacBook Pro"
+        item.price = 1800.00
+        item.details = "I can't wait until the September event.  I hope they release new MVPs"
+        
+        let item2 = Item(context: context)
+        item2.title = "Bose Headphones"
+        item2.price = 300.00
+        item2.details = "Man, it's so nice to be able to block out everyone with the noise cancelling tech!"
+        
+        let item3 = Item(context: context)
+        item3.title = "Tesla Model S"
+        item3.price = 110000.00
+        item3.details = "This is a beautiful car and one day I will own it"
+        
+        let item4 = Item(context: context)
+        item4.title = "iPHone12"
+        item4.price = 800.00
+        item4.details = "Well, it doesn't realllly exist yet"
+        
+    }
 }
+
 
