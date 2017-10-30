@@ -14,6 +14,8 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var segment: UISegmentedControl!
     
+    var fetchedResultsController: NSFetchedResultsController<Item>!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,6 +35,14 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         return 0
     }
 
-
+    // need a way to fetch and display data in db
+    func attemptFetch() {
+        
+        let fetchRequest: NSFetchRequest<Item> = Item.fetchRequest()
+        let dateSort = NSSortDescriptor(key: "created", ascending: false)
+        fetchRequest.sortDescriptors = [dateSort]
+    
+        let controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
+    }
 }
 
