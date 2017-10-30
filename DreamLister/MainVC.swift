@@ -14,7 +14,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var segment: UISegmentedControl!
     
-    var fetchedResultsController: NSFetchedResultsController<Item>!
+    var controller: NSFetchedResultsController<Item>!
     
     override func viewDidLoad() {
         super.viewDidLoad()
