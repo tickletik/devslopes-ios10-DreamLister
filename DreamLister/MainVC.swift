@@ -54,6 +54,10 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         return 0
     }
 
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150
+    }
+    
     // need a way to fetch and display data in db
     func attemptFetch() {
         
