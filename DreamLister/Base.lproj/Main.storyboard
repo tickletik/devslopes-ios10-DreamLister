@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b1w-qq-12f">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b1w-qq-12f">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -49,17 +49,17 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1um-c8-sHW">
-                                                    <rect key="frame" x="8" y="8" width="359" height="134"/>
+                                                    <rect key="frame" x="15" y="11" width="345" height="128"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tesla" translatesAutoresizingMaskIntoConstraints="NO" id="xBU-sP-vIe">
-                                                            <rect key="frame" x="8" y="17" width="100" height="100"/>
+                                                            <rect key="frame" x="8" y="14" width="100" height="100"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="100" id="NIf-uJ-bPb"/>
                                                                 <constraint firstAttribute="width" constant="100" id="QB1-vl-CHY"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Telsa Model S" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLQ-1a-8w4">
-                                                            <rect key="frame" x="116" y="8" width="235" height="21"/>
+                                                            <rect key="frame" x="116" y="8" width="221" height="21"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="21" id="DMg-Dd-dqc"/>
                                                             </constraints>
@@ -68,7 +68,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 80,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0D4-UD-N4u">
-                                                            <rect key="frame" x="116" y="37" width="235" height="21"/>
+                                                            <rect key="frame" x="116" y="37" width="221" height="21"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="21" id="qju-v7-rUO"/>
                                                             </constraints>
@@ -136,16 +136,48 @@
                     <navigationItem key="navigationItem" title="DreamLister" id="wzl-c4-iHB">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="q9p-fV-v2i">
                             <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="4Sb-QB-nxc" kind="show" identifier="ItemDetailsVCNew" id="bes-Uq-xiy"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="segment" destination="LdL-qQ-VwN" id="2CZ-Zz-yks"/>
                         <outlet property="tableView" destination="BYt-3L-gOR" id="8td-WX-lMg"/>
+                        <segue destination="4Sb-QB-nxc" kind="show" identifier="ItemDetailsVC" id="12D-CX-UoU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="245.59999999999999" y="385.45727136431788"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="FHv-d5-sUD">
+            <objects>
+                <viewController id="4Sb-QB-nxc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GAg-vq-9qV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imagePick" translatesAutoresizingMaskIntoConstraints="NO" id="4w0-Vv-X4d">
+                                <rect key="frame" x="0.0" y="72" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Txs-g5-PoB"/>
+                                    <constraint firstAttribute="height" constant="100" id="jIs-Wu-a9u"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4w0-Vv-X4d" firstAttribute="leading" secondItem="n3j-aQ-e6D" secondAttribute="leading" id="3Ma-FL-WBs"/>
+                            <constraint firstItem="4w0-Vv-X4d" firstAttribute="top" secondItem="n3j-aQ-e6D" secondAttribute="top" constant="8" id="mHd-LY-4qI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="n3j-aQ-e6D"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UVS-sM-1jC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1001" y="385"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="EKH-eB-MKn">
@@ -171,6 +203,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="imagePick" width="300" height="300"/>
         <image name="tesla" width="800" height="489"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="12D-CX-UoU"/>
+    </inferredMetricsTieBreakers>
 </document>
