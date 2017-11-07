@@ -259,7 +259,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="n3j-aQ-e6D"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Add/Edit" id="v6i-9k-cWc"/>
+                    <navigationItem key="navigationItem" title="Add/Edit" id="v6i-9k-cWc">
+                        <barButtonItem key="rightBarButtonItem" systemItem="trash" id="axY-LK-Ljd">
+                            <color key="tintColor" red="0.94700735810000003" green="0.28839197459999999" blue="0.2144175763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UVS-sM-1jC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
