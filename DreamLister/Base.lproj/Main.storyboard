@@ -166,18 +166,27 @@
                                     <constraint firstAttribute="height" constant="100" id="jIs-Wu-a9u"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5U5-pT-iGY">
+                                <rect key="frame" x="0.0" y="72" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="T9y-oH-oEW"/>
+                                    <constraint firstAttribute="width" constant="100" id="r78-9Y-6Ii"/>
+                                </constraints>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="4w0-Vv-X4d" firstAttribute="leading" secondItem="n3j-aQ-e6D" secondAttribute="leading" id="3Ma-FL-WBs"/>
+                            <constraint firstItem="5U5-pT-iGY" firstAttribute="centerX" secondItem="4w0-Vv-X4d" secondAttribute="centerX" id="XiI-iB-rYY"/>
                             <constraint firstItem="4w0-Vv-X4d" firstAttribute="top" secondItem="n3j-aQ-e6D" secondAttribute="top" constant="8" id="mHd-LY-4qI"/>
+                            <constraint firstItem="5U5-pT-iGY" firstAttribute="centerY" secondItem="4w0-Vv-X4d" secondAttribute="centerY" id="toC-cf-xgj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="n3j-aQ-e6D"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UVS-sM-1jC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1001" y="385"/>
+            <point key="canvasLocation" x="1000.8" y="384.55772113943033"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="EKH-eB-MKn">
