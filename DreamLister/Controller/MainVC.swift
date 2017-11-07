@@ -22,7 +22,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         tableView.delegate = self
         tableView.dataSource = self
         
-        //generateTestData()
+        generateTestData()
         attemptFetch()
     }
 
@@ -63,12 +63,16 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
     
     // need a way to fetch and display data in db
     func attemptFetch() {
-        
+        print("in attempt fetch")
         let fetchRequest: NSFetchRequest<Item> = Item.fetchRequest()
         let dateSort = NSSortDescriptor(key: "created", ascending: false)
+        
+        print("datesort: \(dateSort)")
+        
         fetchRequest.sortDescriptors = [dateSort]
     
-        let controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
+        let controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context,
+                                                    sectionNameKeyPath: nil, cacheName: nil)
         
         self.controller = controller
         
@@ -82,10 +86,12 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
     
     func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         tableView.beginUpdates()
+        print("in controllerWillChangeContent")
     }
     
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         tableView.endUpdates()
+        print("in controllerDidChangeContent")
     }
     
     func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
