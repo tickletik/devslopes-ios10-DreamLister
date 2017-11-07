@@ -205,13 +205,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select Store" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpI-1y-kCe">
-                                <rect key="frame" x="140" y="258" width="94" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cLn-50-LwT">
+                                <rect key="frame" x="0.0" y="384" width="375" height="215"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="215" id="i03-Zo-0Au"/>
+                                </constraints>
+                            </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9fT-iu-AtX">
                                 <rect key="frame" x="0.0" y="607" width="375" height="40"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -223,12 +222,16 @@
                                     <color key="titleColor" red="0.85149925159999995" green="0.85149925159999995" blue="0.85149925159999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cLn-50-LwT">
-                                <rect key="frame" x="0.0" y="384" width="375" height="215"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Store" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpI-1y-kCe">
+                                <rect key="frame" x="140" y="355" width="94" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="215" id="i03-Zo-0Au"/>
+                                    <constraint firstAttribute="height" constant="21" id="gdf-dX-bDl"/>
+                                    <constraint firstAttribute="width" constant="94" id="y4V-3c-iac"/>
                                 </constraints>
-                            </pickerView>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -246,9 +249,11 @@
                             <constraint firstItem="5U5-pT-iGY" firstAttribute="centerX" secondItem="4w0-Vv-X4d" secondAttribute="centerX" id="XiI-iB-rYY"/>
                             <constraint firstItem="n4t-1N-7xP" firstAttribute="leading" secondItem="4w0-Vv-X4d" secondAttribute="trailing" constant="8" id="Yc1-eE-cLB"/>
                             <constraint firstItem="n3j-aQ-e6D" firstAttribute="bottom" secondItem="9fT-iu-AtX" secondAttribute="bottom" constant="20" id="Z7t-Ku-9gp"/>
+                            <constraint firstItem="cLn-50-LwT" firstAttribute="top" secondItem="cpI-1y-kCe" secondAttribute="bottom" constant="8" id="cRL-m1-iyz"/>
                             <constraint firstItem="kue-b7-6R9" firstAttribute="top" secondItem="4w0-Vv-X4d" secondAttribute="bottom" constant="10" id="dqm-pP-FU6"/>
                             <constraint firstItem="cLn-50-LwT" firstAttribute="trailing" secondItem="n3j-aQ-e6D" secondAttribute="trailing" id="kfZ-Eu-Xcd"/>
                             <constraint firstItem="4w0-Vv-X4d" firstAttribute="top" secondItem="n3j-aQ-e6D" secondAttribute="top" constant="8" id="mHd-LY-4qI"/>
+                            <constraint firstItem="cpI-1y-kCe" firstAttribute="centerX" secondItem="GAg-vq-9qV" secondAttribute="centerX" id="nRa-hX-7DQ"/>
                             <constraint firstItem="n3j-aQ-e6D" firstAttribute="trailing" secondItem="9fT-iu-AtX" secondAttribute="trailing" id="ppO-7n-fiv"/>
                             <constraint firstItem="5U5-pT-iGY" firstAttribute="centerY" secondItem="4w0-Vv-X4d" secondAttribute="centerY" id="toC-cf-xgj"/>
                         </constraints>
