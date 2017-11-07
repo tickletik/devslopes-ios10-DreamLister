@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E34E84431FA7BF3000EF9E27 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34E84421FA7BF3000EF9E27 /* ItemCell.swift */; };
+		E3C189A11FB2796A001299A2 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C189A01FB2796A001299A2 /* CustomTextField.swift */; };
 		E3D66B421FA8D95400AC0DE9 /* ItemDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D66B411FA8D95400AC0DE9 /* ItemDetailsVC.swift */; };
 		E3D853421FA0BD8C00911614 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D853411FA0BD8C00911614 /* AppDelegate.swift */; };
 		E3D853441FA0BD8C00911614 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D853431FA0BD8C00911614 /* MainVC.swift */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		E34E84421FA7BF3000EF9E27 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		E3C189A01FB2796A001299A2 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		E3D66B411FA8D95400AC0DE9 /* ItemDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsVC.swift; sourceTree = "<group>"; };
 		E3D8533E1FA0BD8C00911614 /* DreamLister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamLister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3D853411FA0BD8C00911614 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 		E3D66B401FA8D8A300AC0DE9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E3C189A01FB2796A001299A2 /* CustomTextField.swift */,
 				E3D853431FA0BD8C00911614 /* MainVC.swift */,
 				E3D66B411FA8D95400AC0DE9 /* ItemDetailsVC.swift */,
 			);
@@ -218,6 +221,7 @@
 				E3D853611FA0C2A800911614 /* Store+CoreDataProperties.swift in Sources */,
 				E3D8534A1FA0BD8C00911614 /* DreamLister.xcdatamodeld in Sources */,
 				E3D8535F1FA0C2A800911614 /* Item+CoreDataProperties.swift in Sources */,
+				E3C189A11FB2796A001299A2 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -173,7 +173,7 @@
                                     <constraint firstAttribute="width" constant="100" id="r78-9Y-6Ii"/>
                                 </constraints>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n4t-1N-7xP">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n4t-1N-7xP" customClass="CustomTextField" customModule="DreamLister" customModuleProvider="target">
                                 <rect key="frame" x="108" y="82" width="267" height="40"/>
                                 <color key="backgroundColor" red="0.85149925160529039" green="0.85149925160529039" blue="0.85149925160529039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -183,7 +183,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fXx-uY-XEm">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fXx-uY-XEm" customClass="CustomTextField" customModule="DreamLister" customModuleProvider="target">
                                 <rect key="frame" x="108" y="132" width="267" height="40"/>
                                 <color key="backgroundColor" red="0.85149925159999995" green="0.85149925159999995" blue="0.85149925159999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -193,7 +193,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Detail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kue-b7-6R9">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Details" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kue-b7-6R9" customClass="CustomTextField" customModule="DreamLister" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="182" width="375" height="40"/>
                                 <color key="backgroundColor" red="0.85149925159999995" green="0.85149925159999995" blue="0.85149925159999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
