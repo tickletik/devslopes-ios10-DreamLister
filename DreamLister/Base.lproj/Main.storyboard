@@ -183,11 +183,24 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fXx-uY-XEm">
+                                <rect key="frame" x="108" y="132" width="267" height="40"/>
+                                <color key="backgroundColor" red="0.85149925159999995" green="0.85149925159999995" blue="0.85149925159999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="fp3-Hg-qD2"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="fXx-uY-XEm" firstAttribute="trailing" secondItem="n3j-aQ-e6D" secondAttribute="trailing" id="0oB-lu-7D5"/>
                             <constraint firstItem="4w0-Vv-X4d" firstAttribute="leading" secondItem="n3j-aQ-e6D" secondAttribute="leading" id="3Ma-FL-WBs"/>
                             <constraint firstItem="n3j-aQ-e6D" firstAttribute="trailing" secondItem="n4t-1N-7xP" secondAttribute="trailing" id="3qA-ea-Xhp"/>
+                            <constraint firstItem="fXx-uY-XEm" firstAttribute="top" secondItem="n4t-1N-7xP" secondAttribute="bottom" constant="10" id="9l9-u5-1ji"/>
+                            <constraint firstItem="fXx-uY-XEm" firstAttribute="leading" secondItem="4w0-Vv-X4d" secondAttribute="trailing" constant="8" id="O6Y-5y-vxl"/>
                             <constraint firstItem="n4t-1N-7xP" firstAttribute="top" secondItem="n3j-aQ-e6D" secondAttribute="top" constant="18" id="Tov-Ft-v4Y"/>
                             <constraint firstItem="5U5-pT-iGY" firstAttribute="centerX" secondItem="4w0-Vv-X4d" secondAttribute="centerX" id="XiI-iB-rYY"/>
                             <constraint firstItem="n4t-1N-7xP" firstAttribute="leading" secondItem="4w0-Vv-X4d" secondAttribute="trailing" constant="8" id="Yc1-eE-cLB"/>
