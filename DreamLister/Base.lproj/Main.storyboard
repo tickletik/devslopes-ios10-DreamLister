@@ -155,7 +155,7 @@
         <!--Add/Edit-->
         <scene sceneID="FHv-d5-sUD">
             <objects>
-                <viewController id="4Sb-QB-nxc" sceneMemberID="viewController">
+                <viewController id="4Sb-QB-nxc" customClass="ItemDetailsVC" customModule="DreamLister" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GAg-vq-9qV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
