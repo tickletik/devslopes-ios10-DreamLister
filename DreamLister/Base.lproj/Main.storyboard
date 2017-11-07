@@ -204,6 +204,24 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select Store" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpI-1y-kCe">
+                                <rect key="frame" x="140" y="258" width="94" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9fT-iu-AtX">
+                                <rect key="frame" x="0.0" y="607" width="375" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="9Cy-LR-H1f"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cLn-50-LwT">
+                                <rect key="frame" x="0.0" y="358" width="375" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -211,14 +229,17 @@
                             <constraint firstItem="4w0-Vv-X4d" firstAttribute="leading" secondItem="n3j-aQ-e6D" secondAttribute="leading" id="3Ma-FL-WBs"/>
                             <constraint firstItem="n3j-aQ-e6D" firstAttribute="trailing" secondItem="n4t-1N-7xP" secondAttribute="trailing" id="3qA-ea-Xhp"/>
                             <constraint firstItem="n3j-aQ-e6D" firstAttribute="trailing" secondItem="kue-b7-6R9" secondAttribute="trailing" id="6Yo-om-jou"/>
+                            <constraint firstItem="9fT-iu-AtX" firstAttribute="leading" secondItem="n3j-aQ-e6D" secondAttribute="leading" id="9Oc-tP-13e"/>
                             <constraint firstItem="fXx-uY-XEm" firstAttribute="top" secondItem="n4t-1N-7xP" secondAttribute="bottom" constant="10" id="9l9-u5-1ji"/>
                             <constraint firstItem="fXx-uY-XEm" firstAttribute="leading" secondItem="4w0-Vv-X4d" secondAttribute="trailing" constant="8" id="O6Y-5y-vxl"/>
                             <constraint firstItem="n4t-1N-7xP" firstAttribute="top" secondItem="n3j-aQ-e6D" secondAttribute="top" constant="18" id="Tov-Ft-v4Y"/>
                             <constraint firstItem="kue-b7-6R9" firstAttribute="leading" secondItem="n3j-aQ-e6D" secondAttribute="leading" id="W2c-Qr-O8P"/>
                             <constraint firstItem="5U5-pT-iGY" firstAttribute="centerX" secondItem="4w0-Vv-X4d" secondAttribute="centerX" id="XiI-iB-rYY"/>
                             <constraint firstItem="n4t-1N-7xP" firstAttribute="leading" secondItem="4w0-Vv-X4d" secondAttribute="trailing" constant="8" id="Yc1-eE-cLB"/>
+                            <constraint firstItem="n3j-aQ-e6D" firstAttribute="bottom" secondItem="9fT-iu-AtX" secondAttribute="bottom" constant="20" id="Z7t-Ku-9gp"/>
                             <constraint firstItem="kue-b7-6R9" firstAttribute="top" secondItem="4w0-Vv-X4d" secondAttribute="bottom" constant="10" id="dqm-pP-FU6"/>
                             <constraint firstItem="4w0-Vv-X4d" firstAttribute="top" secondItem="n3j-aQ-e6D" secondAttribute="top" constant="8" id="mHd-LY-4qI"/>
+                            <constraint firstItem="n3j-aQ-e6D" firstAttribute="trailing" secondItem="9fT-iu-AtX" secondAttribute="trailing" id="ppO-7n-fiv"/>
                             <constraint firstItem="5U5-pT-iGY" firstAttribute="centerY" secondItem="4w0-Vv-X4d" secondAttribute="centerY" id="toC-cf-xgj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="n3j-aQ-e6D"/>
