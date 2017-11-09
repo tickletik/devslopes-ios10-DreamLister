@@ -31,8 +31,19 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         storePicker.delegate = self
         storePicker.dataSource = self
 
+        
+        createTestStore(name: "Best Buy")
+        createTestStore(name: "Target")
+        createTestStore(name: "iDigital")
+        createTestStore(name: "Bug")
+        createTestStore(name: "Costco")
+
     }
 
+    func createTestStore(name:String) {
+        let store = Store(context: context)
+        store.name = name
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
