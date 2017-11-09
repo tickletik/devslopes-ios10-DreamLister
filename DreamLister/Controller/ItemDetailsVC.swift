@@ -126,6 +126,9 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         
         // now save the context with the new Item information
         ad.saveContext()
+        
+        // take us back to the main view
+        navigationController?.popViewController(animated: true)
     }
     
     /*
