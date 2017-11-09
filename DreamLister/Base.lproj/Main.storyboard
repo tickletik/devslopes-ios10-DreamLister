@@ -268,8 +268,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="PriceField" destination="3Va-Gh-RmX" id="jlk-w6-ONH"/>
                         <outlet property="detailsField" destination="kue-b7-6R9" id="uMR-OB-WtJ"/>
+                        <outlet property="priceField" destination="3Va-Gh-RmX" id="eIw-xb-jh5"/>
                         <outlet property="storePicker" destination="cLn-50-LwT" id="2JW-Pt-Im9"/>
                         <outlet property="titleField" destination="n4t-1N-7xP" id="Pyw-Xi-4nT"/>
                     </connections>
