@@ -77,8 +77,8 @@
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Someday my dreams will come true and I will own this car.  Just you wait." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qt2-XP-bhZ">
-                                                            <rect key="frame" x="116" y="67" width="235" height="60"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Someday my dreams will come true and I will own this car.  Just you wait." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qt2-XP-bhZ">
+                                                            <rect key="frame" x="116" y="66" width="170" height="58"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
@@ -86,17 +86,17 @@
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
-                                                        <constraint firstItem="Qt2-XP-bhZ" firstAttribute="top" secondItem="0D4-UD-N4u" secondAttribute="bottom" constant="8" id="1Z3-hC-orY"/>
                                                         <constraint firstItem="0D4-UD-N4u" firstAttribute="leading" secondItem="xBU-sP-vIe" secondAttribute="trailing" constant="8" id="BCw-NF-TnD"/>
-                                                        <constraint firstAttribute="trailing" secondItem="Qt2-XP-bhZ" secondAttribute="trailing" constant="8" id="Gjk-Ak-Gj4"/>
                                                         <constraint firstItem="0D4-UD-N4u" firstAttribute="top" secondItem="yLQ-1a-8w4" secondAttribute="bottom" constant="8" id="JQA-HM-ywm"/>
                                                         <constraint firstAttribute="trailing" secondItem="0D4-UD-N4u" secondAttribute="trailing" constant="8" id="adQ-6X-r42"/>
                                                         <constraint firstItem="xBU-sP-vIe" firstAttribute="leading" secondItem="1um-c8-sHW" secondAttribute="leading" constant="8" id="amW-Sp-blT"/>
                                                         <constraint firstItem="yLQ-1a-8w4" firstAttribute="top" secondItem="1um-c8-sHW" secondAttribute="top" constant="8" id="bin-CC-8Lr"/>
-                                                        <constraint firstAttribute="bottom" secondItem="Qt2-XP-bhZ" secondAttribute="bottom" constant="8" id="ftD-16-Oss"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Qt2-XP-bhZ" secondAttribute="bottom" constant="4" id="cnY-Q9-0ch"/>
                                                         <constraint firstItem="yLQ-1a-8w4" firstAttribute="leading" secondItem="xBU-sP-vIe" secondAttribute="trailing" constant="8" id="hHf-S9-05E"/>
                                                         <constraint firstItem="xBU-sP-vIe" firstAttribute="centerY" secondItem="1um-c8-sHW" secondAttribute="centerY" id="hgp-z8-VZv"/>
-                                                        <constraint firstItem="Qt2-XP-bhZ" firstAttribute="leading" secondItem="xBU-sP-vIe" secondAttribute="trailing" constant="8" id="lsz-es-2ru"/>
+                                                        <constraint firstItem="Qt2-XP-bhZ" firstAttribute="top" secondItem="0D4-UD-N4u" secondAttribute="bottom" constant="8" id="rqE-Mw-qMn"/>
+                                                        <constraint firstItem="Qt2-XP-bhZ" firstAttribute="leading" secondItem="xBU-sP-vIe" secondAttribute="trailing" constant="8" id="vBT-RQ-XbM"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Qt2-XP-bhZ" secondAttribute="trailing" constant="4" id="xf1-bB-VGL"/>
                                                         <constraint firstAttribute="trailing" secondItem="yLQ-1a-8w4" secondAttribute="trailing" constant="8" id="yEc-DI-LXw"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
@@ -150,7 +150,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="245.59999999999999" y="385.45727136431788"/>
+            <point key="canvasLocation" x="245" y="385"/>
         </scene>
         <!--Add/Edit-->
         <scene sceneID="FHv-d5-sUD">
@@ -213,10 +213,9 @@
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Store" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpI-1y-kCe">
-                                <rect key="frame" x="113" y="256" width="94" height="21"/>
+                                <rect key="frame" x="113.5" y="256" width="93" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="gdf-dX-bDl"/>
-                                    <constraint firstAttribute="width" constant="94" id="y4V-3c-iac"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -228,7 +227,6 @@
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="7j7-ed-2jZ"/>
                                     <constraint firstAttribute="height" constant="40" id="EDS-5r-Poc"/>
-                                    <constraint firstAttribute="width" constant="192" id="Ntt-QR-ePu"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -306,6 +304,6 @@
         <image name="tesla" width="800" height="489"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="12D-CX-UoU"/>
+        <segue reference="bes-Uq-xiy"/>
     </inferredMetricsTieBreakers>
 </document>
