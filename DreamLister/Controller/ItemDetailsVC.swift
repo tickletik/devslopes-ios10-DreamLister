@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
@@ -80,6 +81,15 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         return stores.count
     }
 
+    func getStores() {
+        let fetchRequest: NSFetchRequest<Store> = Store.fetchRequest()
+        do {
+            self.stores = try context.fetch(fetchRequest)
+            self.storePicker.reloadAllComponents()
+        } catch {
+            // handle error
+        }
+    }
     /*
     // MARK: - Navigation
 
