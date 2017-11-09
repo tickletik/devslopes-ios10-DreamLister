@@ -31,16 +31,29 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         storePicker.delegate = self
         storePicker.dataSource = self
 
-        
+        createTestData()
+    }
+    
+    func createTestData() {
         createTestStore(name: "Best Buy")
         createTestStore(name: "Target")
         createTestStore(name: "iDigital")
         createTestStore(name: "Bug")
         createTestStore(name: "Costco")
-
+        
+        /*
+         all the store test items were created using a global context constant
+         this context was updated each time a store was created.  So when we call
+         ad.saveContext, there is no need to pass the context over directly
+         
+         (not a good practice btw)
+         */
+        ad.saveContext()
     }
 
     func createTestStore(name:String) {
+        // "context" is a global constant found in AppDelegate.swift
+        // "ad" is a global constant found in AppDelegate.swift
         let store = Store(context: context)
         store.name = name
     }
