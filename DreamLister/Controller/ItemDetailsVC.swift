@@ -32,10 +32,11 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         storePicker.delegate = self
         storePicker.dataSource = self
 
-        createTestData()
+        // generateTestData()
+        getStores()
     }
     
-    func createTestData() {
+    func generateTestData() {
         createTestStore(name: "Best Buy")
         createTestStore(name: "Target")
         createTestStore(name: "iDigital")
