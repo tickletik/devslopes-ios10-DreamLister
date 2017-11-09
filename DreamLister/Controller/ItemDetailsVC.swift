@@ -93,6 +93,39 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
     }
     
     @IBAction func savePressed(_ sender: UIButton) {
+        // insert an item into the context
+        let item = Item(context: context)
+        
+        // assign text fields to Item attributes
+        if let title = titleField.text {
+            item.title = title
+        }
+        
+        if let price = priceField.text {
+            // convert the text value from pricefield to a double
+            item.price = (price as NSString).doubleValue
+        }
+        
+        if let details = detailsField.text {
+            item.details = details
+        }
+        
+        /*
+            we need to pick out the Store value in the array "stores", this
+            value can be referred to by the current SelectedRow in storePicker
+ 
+            however to get the selected row, we need to tell storePicker which component
+            we are looking at (storePicker can have multiple components).
+ 
+            In this case, "component" is teh equivalent of columns, and since we specified
+            that storePIcker has only one column (which defaults to index 0), we ask
+            storePicker to give us the selected row at that component.
+        */
+        
+        item.toStore = stores[storePicker.selectedRow(inComponent: 0)]
+        
+        // now save the context with the new Item information
+        ad.saveContext()
     }
     
     /*
