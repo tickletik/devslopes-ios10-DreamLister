@@ -71,8 +71,11 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         
         fetchRequest.sortDescriptors = [dateSort]
     
-        let controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context,
-                                                    sectionNameKeyPath: nil, cacheName: nil)
+        let controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
+        
+        // add this so that the controller will know when to be told who to
+        // update from (delegate Delegates)
+        controller.delegate = self
         
         self.controller = controller
         
